@@ -1,0 +1,26 @@
+.shopping-list {
+    width: 300px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.shopping-list h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.shopping-list ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.shopping-list li {
+    margin: 10px 0;
+}
+
+.empty-list {
+    text-align: center;
+    color: gray;
+}

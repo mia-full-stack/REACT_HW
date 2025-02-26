@@ -1,0 +1,31 @@
+.order-status {
+    padding: 15px;
+    margin: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.order-number {
+    font-weight: bold;
+}
+
+.status {
+    padding: 5px 10px;
+    border-radius: 3px;
+    color: white;
+}
+
+.в-пути {
+    background-color: #3498db;
+}
+
+.обработан {
+    background-color: #f1c40f;
+}
+
+.доставлен {
+    background-color: #2ecc71;
+}
