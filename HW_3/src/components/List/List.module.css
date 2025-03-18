@@ -1,0 +1,100 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: #333;
+    text-align: center;
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 0.5rem;
+}
+
+.peoplegrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.personcard {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.2s, box-shadow 0.2s;
+    position: relative;
+}
+
+.personcard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.cardcontent {
+    padding: 1.5rem;
+}
+
+.personinfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.personname {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 0.25rem;
+}
+
+.personage {
+    color: #666;
+    font-size: 0.95rem;
+}
+
+.deletebutton {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #999;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.deletebutton:hover {
+    background-color: #f8f8f8;
+    color: #ff5555;
+}
+
+.emptymessage {
+    text-align: center;
+    margin-top: 3rem;
+    color: #888;
+    font-style: italic;
+}
+
+.appcontainer {
+    min-height: 100vh;
+    background-color: #f9f9f9;
+}
+
+@media (max-width: 768px) {
+    .people-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .title {
+        font-size: 1.75rem;
+    }
+}
