@@ -1,0 +1,67 @@
+.userProfile {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.userHeader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.userImage {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.userName {
+    margin-top: 10px;
+    font-size: 24px;
+    color: #333;
+}
+
+.userInfo {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.userInfo p {
+    margin: 8px 0;
+    font-size: 16px;
+    color: #555;
+}
+
+.loadButton {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.loadButton:hover {
+    background-color: #357abd;
+}
+
+.loading {
+    text-align: center;
+    font-size: 18px;
+    padding: 20px;
+    color: #666;
+}
