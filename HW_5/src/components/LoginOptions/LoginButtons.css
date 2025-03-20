@@ -1,0 +1,38 @@
+.login-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    border: 1px solid #1db954;
+    background-color: #0a0613;
+    padding: 16px 48px;
+    cursor: pointer;
+    
+}
+
+.login-button {
+    margin: 0 16px;
+    display: flex;
+    height: 64px;
+    width: 64px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+
+    &:active {
+        transform: translateY(-5px);
+    }
+}
+    
+
+.green {
+    background-color: #1db954;
+    
+}
+
+.blue {
+    background-color: #007aff;
+    
+}
