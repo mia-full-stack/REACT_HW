@@ -1,0 +1,74 @@
+/* Основной контейнер приложения */
+.app-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+/* Стиль заголовка */
+h1 {
+    color: #333;
+    margin-bottom: 30px;
+}
+
+/* Контейнер для поля ввода */
+.input-container {
+    margin-bottom: 30px;
+}
+
+/* Стиль для метки поля ввода */
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* Стили для поля ввода */
+input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    transition: border-color 0.3s;
+}
+
+/* Стиль при фокусе на поле ввода */
+input:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+/* Контейнер для отображения значений */
+.value-display {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* Блок для отображения одного значения */
+.value-box {
+    flex: 1;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Стиль для подзаголовков */
+h2 {
+    font-size: 18px;
+    margin-top: 0;
+    color: #555;
+}
+
+/* Стиль для текста значений */
+.value-text {
+    font-size: 20px;
+    font-weight: bold;
+    color: #007bff;
+    word-break: break-word;
+    min-height: 30px;
+}
