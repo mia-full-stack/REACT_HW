@@ -1,0 +1,82 @@
+.articlePage {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.articleHeader {
+    margin-bottom: 30px;
+}
+
+.articleHeader h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.articleMeta {
+    display: flex;
+    color: #777;
+    font-size: 0.9rem;
+}
+
+.articleDate {
+    margin-right: 20px;
+}
+
+.articleFeaturedImage {
+    margin-bottom: 30px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.articleFeaturedImage img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.articleContent {
+    line-height: 1.8;
+    color: #444;
+    font-size: 1.1rem;
+}
+
+.articleContent p {
+    margin-bottom: 20px;
+}
+
+.articleNavigation {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #eaeaea;
+}
+
+.backToArticles {
+    display: inline-block;
+    color: #0070f3;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.backToArticles:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .articlePage {
+        padding: 20px;
+    }
+
+    .articleHeader h1 {
+        font-size: 2rem;
+    }
+
+    .articleMeta {
+        flex-direction: column;
+    }
+
+    .articleDate {
+        margin-bottom: 5px;
+    }
+}
