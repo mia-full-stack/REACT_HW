@@ -1,0 +1,10 @@
+/* Стили для панели навигации */
+.navbar {
+    background-color: #1976d2;
+}
+
+/* Стили для заголовка в панели навигации */
+.navbarTitle {
+    flex-grow: 1;
+    font-weight: 600;
+}
