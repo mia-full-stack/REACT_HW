@@ -1,0 +1,16 @@
+.answerForm{
+    display: flex;
+
+input {
+    width: 70%;
+    font-size: 18px;
+    border-radius: 5px;
+}
+}
+
+button {
+    /* width: 30%; */
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 5px;
+}

@@ -2,6 +2,7 @@ import { useState } from "react"
 import CitySelector from "../CitySelector/CitySelector"
 import CityCard from "../CityCard/CityCard"
 import citiesData from "../../data/citiesData.js"
+import MathQuiz from '../MathQuiz/MathQuiz';
 
 import '../../styles/styles.css'
 
@@ -23,6 +24,8 @@ function App() {
     <h1 className="title">City Cards</h1>
     <CitySelector cities={citiesData} onCityChange={handleCityChange} />
     <CityCard city={selectedCity} />
+
+    <MathQuiz />
   </main>
   )
 }
