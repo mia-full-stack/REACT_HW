@@ -1,51 +1,61 @@
-import { useState, useEffect } from "react"
+"use client"
 
-function ListItems() {
-    // Состояние для хранения списка элементов и значения ввода
-    const [items, setItems] = useState([])
+import { useState, useEffect } from "react"
+import styles from "./listItems.module.css"
+
+const ListItems = () => {
+    const [items, setItems] = useState(["Элемент 1", "Элемент 2"])
     const [inputValue, setInputValue] = useState("")
 
-    // Функция для добавления нового элемента в список
-    const addItem = () => {
-        if (inputValue.trim() !== "") {
-            setItems([...items, inputValue])
-            setInputValue("") // Очищаем поле ввода после добавления
-        }
-    }
-
-    // Намеренная проблема с производительностью: useEffect запускается при каждом изменении items
     useEffect(() => {
-        console.log("Компонент ListItems обновлен")
-    }, [items]) // Эта зависимость вызывает запуск эффекта каждый раз при изменении items
+        console.log("компонент обновлен")
+    }, [])
 
-    // Обработка нажатия клавиши Enter для добавления элемента
-    const handleKeyPress = (e) => {
-        if (e.key === "Enter") {
-            addItem()
-        }
+    const handleChange = (event) => {
+        setInputValue(event.target.value)
     }
+
+    const addItem = () => {
+        if (!inputValue.trim()) {
+            return
+        }
+        setItems((prevItems) => [...prevItems, inputValue])
+        setInputValue("")
+    }
+
+    const handleSubmit = (e) => {
+        e.preventDefault()
+        addItem()
+    }
+
+    const elements = items.map((item) => (
+        <li key={item} className={styles.item}>
+            {item}
+        </li>
+    ))
 
     return (
-        <div className="list-container">
-            <h2>Список элементов</h2>
-            <div className="input-group">
+        <div className={styles.container}>
+            <form onSubmit={handleSubmit} className={styles.form}>
                 <input
-                    type="text"
+                    onChange={handleChange}
                     value={inputValue}
-                    onChange={(e) => setInputValue(e.target.value)}
-                    onKeyPress={handleKeyPress}
-                    placeholder="Введите новый элемент"
+                    type="text"
+                    name="elementAdd"
+                    placeholder="Введите элемент списка"
+                    className={styles.input}
                 />
-                <button onClick={addItem}>Добавить</button>
+                <button type="submit" className={styles.button}>
+                    Добавить
+                </button>
+            </form>
+
+            <div className={styles.listContainer}>
+                <h3 className={styles.title}>Список элементов</h3>
+                <ul className={styles.list}>{elements}</ul>
             </div>
-            <ul className="items-list">
-                {items.map((item, index) => (
-                    <li key={index}>{item}</li>
-                ))}
-            </ul>
         </div>
     )
 }
 
 export default ListItems
-
