@@ -1,0 +1,38 @@
+.container {
+    width: 600px;
+    margin: 30px auto;
+}
+
+.title {
+    font-size: 38px;
+    font-weight: 800px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.ul {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.btnBox {
+    margin: 20px 0;
+}
+
+.btn {
+    background-color: #1b3073;
+    cursor: pointer;
+    padding: 10px 30px;
+    border: 2px solid #1b3073;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #fff;
+    color: #1b3073;
+}
