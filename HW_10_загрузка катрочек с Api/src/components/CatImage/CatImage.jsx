@@ -3,6 +3,13 @@ import axios from "axios"
 
 import styles from "./CatImage.module.css"
 
+
+// Количество строк и столбцов в сетке
+const rows = 3
+const columns = 5
+const totalImages = rows * columns
+
+
 function CatImage() {
     // Состояние для хранения массива изображений кошек
     const [catImages, setCatImages] = useState([])
@@ -10,10 +17,7 @@ function CatImage() {
     const [loading, setLoading] = useState(true)
     // Состояние для отображения ошибки
     const [error, setError] = useState(null)
-    // Количество строк и столбцов в сетке
-    const rows = 3
-    const columns = 5
-    const totalImages = rows * columns
+
 
     // Функция для загрузки всех изображений кошек
     const fetchAllCatImages = async () => {
